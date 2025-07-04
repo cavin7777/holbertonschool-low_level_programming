@@ -3,6 +3,7 @@
 
 /**
  * main - check the code
+ * _atoi - converts a string to an integer
  *
  * Return: Always 0.
  */
