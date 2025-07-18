@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 	 * element at a[0][0], a[1][1], a[2][2], ..., a[size-1][size-1]
 	 * Formula in 1D: a[i * size + i]
     */
-	sum1 += a[i * size + 1];
+	sum1 += a[i * size + i];
 	/*
 	 * To access the secondary diagonal (from top-right to bottom-left):
 	 * element at a[0][size-1], a[1][size-2], ..., a[size-1][0]
