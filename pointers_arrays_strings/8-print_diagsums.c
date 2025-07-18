@@ -11,7 +11,7 @@ void print_diagsums(int *a, int size)
 	int i; /* Loop counter */
 	int sum1 = 0; /* Sum of the primary diagonal */
 	int sum2 = 0; /* Sum of the secondary diagonal */
-	/* 
+	/*
 	 * Loop through each row of the matrix.
      * Since the matrix is square, we loop 'size' times.
      */
