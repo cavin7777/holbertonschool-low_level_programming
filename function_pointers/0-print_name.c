@@ -1,6 +1,15 @@
-#ifndef FUNCTION_POINTER_H
-#define FUNCTION_POINTER_H
+#include "function_pointers.h"
 
-void print_name(char *name, void (*f)(char *));
+/**
+ * print_name - executes a function passed as parameter on a name
+ * @name: the name to print
+ * @f: a pointer to a function that take a char * and returns void
+ *
+ * Return: Nothing
+ */
 
-#endif
+void print_name(char *name, void (*f)(char *))
+{
+	if (name != NULL && f != NULL)
+		f(name);
+}
