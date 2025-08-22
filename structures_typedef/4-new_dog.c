@@ -30,7 +30,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 
 	copy_name = malloc(name_len + 1);
-	if (name == NULL)
+	if (copy_name == NULL)
 	{
 		free(dog);
 		return (NULL);
@@ -39,14 +39,13 @@ dog_t *new_dog(char *name, float age, char *owner)
 		copy_name[i] = name[i];
 
 	copy_owner = malloc(owner_len + 1);
-	if (owner == NULL)
+	if (copy_owner == NULL)
 	{
 		free(dog);
 		free(copy_name);
 	}
 	for (i = 0; i <= owner_len; i++)
 		copy_owner[i] = owner[i];
-
 	dog->name = copy_name;
 	dog->age = age;
 	dog->owner = copy_owner;
