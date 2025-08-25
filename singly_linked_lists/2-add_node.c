@@ -29,7 +29,10 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
-	begin_node->len = strlen(str);
+	begin_node->len = 0;
+
+	while (str[begin_node->len] != '\0')
+		begin_node->len = begin_node->len + 1;
 
 	begin_node->next = *head;
 	*head = begin_node;
