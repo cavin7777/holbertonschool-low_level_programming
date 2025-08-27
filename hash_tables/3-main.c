@@ -13,11 +13,11 @@ int main(void)
     hash_table_t *ht;
 
     ht = hash_table_create(1024);
-    hash_table_set(ht, "betty", "cool");
+    hash_table_set(ht, "Holberton", "cool");
 
-	printf("Index of 'betty': %lu\n",
-           key_index((const unsigned char *)"betty", ht->size));
+	printf("Index of 'Holberton': %lu\n",
+           key_index((const unsigned char *)"Holberton", ht->size));
     printf("Value at that index: %s\n",
-           ht->array[key_index((const unsigned char *)"betty", ht->size)]->value);
+           ht->array[key_index((const unsigned char *)"Holberton", ht->size)]->value);
 	return (EXIT_SUCCESS);
 }
